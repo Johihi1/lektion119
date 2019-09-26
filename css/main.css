@@ -6,7 +6,7 @@ html, body {
 
 body {
  display: flex;
- background-color: #4CC6DE;
+ background-color: #C41815;
  margin: 0; 
 }
 
@@ -27,7 +27,8 @@ main {
 header {
     background-color: #875ECA;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    height: 250%;
+    height: 287%;
+    
 }
 
 header > ul {
@@ -56,7 +57,8 @@ section {
 }
 
 footer {
-
+background-color: mediumblue;
+height: 11.6%
 }
 
 a {
