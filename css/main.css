@@ -32,7 +32,7 @@ main {
 header {
     background-color: darkred;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    height: 387%;
+    height: 389.5%;
     width: 15%;
     font-style: normal;
     font-weight: 500;
@@ -42,6 +42,7 @@ header {
     font-variant-ligatures: none;
     text-align: center;
     text-anchor: middle;
+    overflow: hidden;
 }
 
 header > ul {
