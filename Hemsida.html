@@ -7,25 +7,77 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+</style>
 </head>
 <body>
     <header>
         <ul>
-            <li><a href="#page-1">page 1</a></li>
-            <li><a href="#page-2">page 2</a></li>
+            <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+            </div>
+            <script>
+                    function myFunction(x) {
+                      x.classList.toggle("change");
+                    }
+                    </script>
+         <p></p>   
+            <li><a href="#Home">Home</a></li>
+         <p></p>
+            <li><a href="#Product">Product</a></li>
+         <p></p>   
+            <li><a href="#Skiss">Skiss</a></li>
         </ul>
     </header>
     <main>
         <img src="C:\Code\wu1\Lektion199\image\Skärmbild (6).png">
-        <section id="page-1">
-            <h1>Page #1</h1>
+        <section id="Home">
+            <h1>Welcome</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure accusamus odio non odit neque facere explicabo aliquam voluptatem corrupti similique nihil vero, voluptatum nemo facilis veritatis officia ea tempore!</p>
         </section>
 
-        <section id="page-2">
-            <h1>Page #2</h1>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam est debitis, officia omnis dignissimos alias. At corrupti maxime eaque, similique porro voluptatum aliquid quia suscipit facere, cum, unde repudiandae vero!</P>
+        <section id="Product">
+            <h1>Out of stock</h1>
+            <p>We're terribly sorry, but it seems we are out of this product.</p>
         </section>
+
+        <section id="Skiss">
+            <h1>Skiss</h1>
+            <img class="bild1" src="image\20190926_144205.jpg">
+            <img class="bild2" src="image\20190926_144217.jpg">
+        <!--   
+            <img src="C:\Code\wu1\Lektion199\image\20190926_144205.jpg">
+            <img src="C:\Code\wu1\Lektion199\image\20190926_144217.jpg">
+        !-->
+        </section>
+        
         <footer>
             <p>page footer</p>
         </footer>

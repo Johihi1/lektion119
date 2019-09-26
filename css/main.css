@@ -4,15 +4,20 @@ html, body {
     height: 100%;
 }
 
+div {
+ align-items: flex-start;
+ display: flex;
+}
+
 body {
  display: flex;
- background-color: #C41815;
+ background-color: #c60e00;
  margin: 0; 
 }
 
 main {
     flex: 1;
-    align-items: center;
+    align-items: baseline;
     flex-direction: column;
     font-style: normal;
     font-weight: 500;
@@ -25,10 +30,18 @@ main {
 }
 
 header {
-    background-color: #875ECA;
+    background-color: darkred;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    height: 287%;
-    
+    height: 387%;
+    width: 15%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1;
+    font-family: 'Raleway', sans-serif;
+    font-variant-ligatures: none;
+    text-align: center;
+    text-anchor: middle;
 }
 
 header > ul {
@@ -54,6 +67,16 @@ section {
     margin: 0 auto;
     width: 80%;
     height: 100%;
+}
+
+.bild1 {
+    width: 500px;
+    height: 500px
+}
+
+.bild2 {
+    width: 500px;
+    height: 500px;
 }
 
 footer {
